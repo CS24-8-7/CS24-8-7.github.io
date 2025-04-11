@@ -159,8 +159,7 @@ document.addEventListener("click", function (e) {
     }
 });
 
-<<<<<<< HEAD
-=======
+
 const translations = {
     en: {
         heroSubtitle: "Full-Stack Developer",
@@ -201,4 +200,3 @@ function switchLanguage(language) {
         logo.style.direction = "ltr";
     }
 }
->>>>>>> 6fad6009e2ddf3976ffc844e10ff554039d91939

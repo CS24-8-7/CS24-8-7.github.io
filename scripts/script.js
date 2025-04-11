@@ -1,3 +1,4 @@
+
 // Mobile Navigation
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const navLinks = document.querySelector('.nav-links');
@@ -144,3 +145,17 @@ document.addEventListener('DOMContentLoaded', () => {
         animateSkillBars();
     }
 });
+
+function toggleLangMenu() {
+    document.getElementById("lang-menu").classList.toggle("show");
+}
+
+// غلق القائمة إذا ضغطت خارجها
+document.addEventListener("click", function (e) {
+    const btn = document.getElementById("lang-btn");
+    const menu = document.getElementById("lang-menu");
+    if (!btn.contains(e.target) && !menu.contains(e.target)) {
+        menu.classList.remove("show");
+    }
+});
+

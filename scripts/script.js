@@ -159,3 +159,46 @@ document.addEventListener("click", function (e) {
     }
 });
 
+<<<<<<< HEAD
+=======
+const translations = {
+    en: {
+        heroSubtitle: "Full-Stack Developer",
+        heroTitle: "Farea AL-Dhela'a",
+        heroDescription: "Computer Science graduate passionate about building modern, scalable applications with intuitive user experiences.",
+        downloadCv: "Download CV",
+        contactMe: "Contact Me",
+        allRightsReserved: "All rights reserved."
+    },
+    ar: {
+        heroSubtitle: "مطور برمجيات متكامل",
+        heroTitle: "فرعاء الذيلاء",
+        heroDescription: "خريج علوم حاسوب شغوف ببناء تطبيقات حديثة وقابلة للتوسع مع تجارب مستخدم سلسة.",
+        downloadCv: "تحميل السيرة الذاتية",
+        contactMe: "اتصل بي",
+        allRightsReserved: "جميع الحقوق محفوظة."
+    }
+};
+
+function switchLanguage(language) {
+    // ترجمة النصوص
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        el.textContent = translations[language][key];
+    });
+
+    // تغيير الاتجاه واللغة في الصفحة
+    document.documentElement.lang = language;
+    document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
+
+    // تغيير الشعار
+    const logo = document.getElementById("logo-name");
+    if (language === "ar") {
+        logo.innerHTML = "Farea<span>Dev</span>";
+        logo.style.direction = "rtl";
+    } else {
+        logo.innerHTML = "Farea<span>Dev</span>";
+        logo.style.direction = "ltr";
+    }
+}
+>>>>>>> 6fad6009e2ddf3976ffc844e10ff554039d91939

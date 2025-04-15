@@ -8,6 +8,13 @@ mobileMenuBtn.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
+
+function toggleMobileMenu() {
+    document.getElementById('nav-links').classList.toggle('show');
+    document.getElementById('menu-btn').classList.toggle('active');
+  }
+
+  
 // Close mobile menu when clicking a link
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
@@ -159,3 +166,18 @@ document.addEventListener("click", function (e) {
     }
 });
 
+
+//To List
+const services = [
+  ];
+  const servicesList = document.getElementById('services-list');
+
+  services.forEach(service => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = service.link;
+    a.textContent = service.name;
+    a.setAttribute('data-translate', service.key);
+    li.appendChild(a);
+    servicesList.appendChild(li);
+  });

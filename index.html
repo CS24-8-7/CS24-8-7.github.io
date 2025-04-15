@@ -19,17 +19,17 @@
     <nav class="navbar">
         <div class="container">
             <a href="#home" class="logo" id="logo-name">Farea<span>Dev</span></a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#home" class="active" data-translate="nav.home">Home</a></li>
                 <li><a href="#about" data-translate="nav.about">About</a></li>
                 <li><a href="#skills" data-translate="nav.skills">Skills</a></li>
                 <li><a href="#projects" data-translate="nav.projects">Projects</a></li>
                 <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
             </ul>
+
             <div class="nav-actions">
-                <!-- زر اللغة الدائري -->
                 <div class="language-dropdown">
-                    <button id="lang-btn" class="icon-btn" aria-label="Language" onclick="toggleLangMenu()">
+                    <button id="lang-btn" class="icon-btn" onclick="toggleLangMenu()">
                         <i class='bx bx-globe'></i>
                     </button>
                     <ul id="lang-menu" class="lang-menu">
@@ -38,14 +38,12 @@
                     </ul>
                 </div>
 
-                <!-- زر الثيم -->
-                <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">
+                <button id="theme-toggle" class="icon-btn">
                     <i class='bx bx-sun sun-icon'></i>
                     <i class='bx bx-moon moon-icon'></i>
                 </button>
 
-                <!-- زر القائمة الجانبية للجوال -->
-                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <button class="mobile-menu-btn" id="menu-btn" onclick="toggleMobileMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -79,7 +77,7 @@
                         <a href="https://github.com/farea-aldhelaa" target="_blank" aria-label="GitHub">
                             <i class='bx bxl-github'></i>
                         </a>
-                        <a href="https://x.com/Flutter_Dev717?s=08" target="_blank" aria-label="Twitter">
+                        <a href="https://x.com/farea_aldhelaa" target="_blank" aria-label="Twitter">
                             <i class='bx bxl-twitter'></i>
                         </a>
                     </div>
@@ -334,7 +332,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Projects Section -->
     <section id="projects" class="section projects">
         <div class="container">
@@ -352,10 +350,10 @@
                         <img src="assets\images\work.jpg" alt="EQARK ALMETHALI">
 
                         <div class="project-links">
-                            <a href="#" class="btn btn-small" target="_blank">
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small" target="_blank">
                                 <i class='bx bx-link-external'></i> Live
                             </a>
-                            <a href="#" class="btn btn-small btn-outline" target="_blank">
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small btn-outline" target="_blank">
                                 <i class='bx bxl-github'></i> Code
                             </a>
                         </div>
@@ -403,10 +401,10 @@
                         <img src="assets\images\work4.png" alt="E-Commerce App">
                         <img src="assets\images\work6.jpg" alt="E-Commerce App">
                         <div class="project-links">
-                            <a href="#" class="btn btn-small" target="_blank">
+                            <a href="https://github.com/farea-al-dhel" class="btn btn-small" target="_blank">
                                 <i class='bx bx-link-external'></i> Live
                             </a>
-                            <a href="#" class="btn btn-small btn-outline" target="_blank">
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small btn-outline" target="_blank">
                                 <i class='bx bxl-github'></i> Code
                             </a>
                         </div>
@@ -431,10 +429,10 @@
                         <img src="assets\images\work5.png" alt="Google News Clone">
                         <img src="assets/images/work2.png" alt="Google News Clone">
                         <div class="project-links">
-                            <a href="#" class="btn btn-small" target="_blank">
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small" target="_blank">
                                 <i class='bx bx-link-external'></i> Live
                             </a>
-                            <a href="#" class="btn btn-small btn-outline" target="_blank">
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small btn-outline" target="_blank">
                                 <i class='bx bxl-github'></i> Code
                             </a>
                         </div>
@@ -460,14 +458,14 @@
                         <img src="assets/images/work3.png" alt="CV Builder Screenshot 2">
 
                         <div class="project-links">
-                            <a href="#" class="btn btn-small" target="_blank">
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small" target="_blank">
                                 <i class='bx bx-link-external'></i> Live
                             </a>
-                            <a href="#" class="btn btn-small btn-outline" target="_blank">
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small btn-outline" target="_blank">
                                 <i class='bx bxl-github'></i> Code
                             </a>
                         </div>
-                        
+
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">CV Builder</h3>
@@ -489,10 +487,10 @@
                     <div class="project-image">
                         <img src="assets\images\work4.png" alt="E-Commerce App">
                         <div class="project-links">
-                            <a href="#" class="btn btn-small" target="_blank">
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small" target="_blank">
                                 <i class='bx bx-link-external'></i> Live
                             </a>
-                            <a href="#" class="btn btn-small btn-outline" target="_blank">
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small btn-outline" target="_blank">
                                 <i class='bx bxl-github'></i> Code
                             </a>
                         </div>
@@ -510,144 +508,148 @@
                 </div>
 
                 <!-- Project 7: BMI Calculator -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="assets/images/bmi.png" alt="BMI Calculator">
-                    <div class="project-links">
-                        <a href="#" class="btn btn-small" target="_blank">
-                            <i class='bx bx-link-external'></i> Live
-                        </a>
-                        <a href="#" class="btn btn-small btn-outline" target="_blank">
-                            <i class='bx bxl-github'></i> Code
-                        </a>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/bmi.png" alt="BMI Calculator">
+                        <div class="project-links">
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small" target="_blank">
+                                <i class='bx bx-link-external'></i> Live
+                            </a>
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small btn-outline" target="_blank">
+                                <i class='bx bxl-github'></i> Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">BMI Calculator</h3>
+                        <p class="project-description">
+                            A simple Flutter app that calculates the user's Body Mass Index. Built as a hands-on project
+                            after completing a Udemy course.
+                        </p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Languages</span>
+                        </div>
                     </div>
                 </div>
-                <div class="project-content">
-                    <h3 class="project-title">BMI Calculator</h3>
-                    <p class="project-description">
-                        A simple Flutter app that calculates the user's Body Mass Index. Built as a hands-on project after completing a Udemy course.
-                    </p>
-                    <div class="project-tech">
-                        <span>Flutter</span>
-                        <span>Dart</span>
-                        <span>Languages</span>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Project 8: Age Calculator -->
-            <div class="project-card">
-                <div class="project-image">
+                <!-- Project 8: Age Calculator -->
+                <div class="project-card">
+                    <div class="project-image">
 
-                    <img src="assets/images/age.png" alt="Age Calculator">
-                    <img src="assets/images/age1.png" alt="Age Calculator">
-                    <div class="project-links">
-                        <a href="#" class="btn btn-small" target="_blank">
-                            <i class='bx bx-link-external'></i> Live
-                        </a>
-                        <a href="#" class="btn btn-small btn-outline" target="_blank">
-                            <i class='bx bxl-github'></i> Code
-                        </a>
+                        <img src="assets/images/age.png" alt="Age Calculator">
+                        <img src="assets/images/age1.png" alt="Age Calculator">
+                        <div class="project-links">
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small" target="_blank">
+                                <i class='bx bx-link-external'></i> Live
+                            </a>
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small btn-outline" target="_blank">
+                                <i class='bx bxl-github'></i> Code
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Age Calculator</h3>
-                    <p class="project-description">
-                        A basic Flutter app that calculates user age. Used to practice fundamental Flutter concepts.
-                    </p>
-                    <div class="project-tech">
-                        <span>Flutter</span>
-                        <span>Dart</span>
-                        <span>Theme</span>
+                    <div class="project-content">
+                        <h3 class="project-title">Age Calculator</h3>
+                        <p class="project-description">
+                            A basic Flutter app that calculates user age. Used to practice fundamental Flutter concepts.
+                        </p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Theme</span>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Project 9: Copy of Samsung Note, Calendar, Apple Calculator -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="assets/images/samsung-copy.png (1).jpg" alt="Cloned Apps">
-                    <img src="assets/images/samsung-copy.png (2).jpg" alt="Cloned Apps">
-                    <div class="project-links">
-                        <a href="#" class="btn btn-small" target="_blank">
-                            <i class='bx bx-link-external'></i> Live
-                        </a>
-                        <a href="#" class="btn btn-small btn-outline" target="_blank">
-                            <i class='bx bxl-github'></i> Code
-                        </a>
+                <!-- Project 9: Copy of Samsung Note, Calendar, Apple Calculator -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/samsung-copy.png (1).jpg" alt="Cloned Apps">
+                        <img src="assets/images/samsung-copy.png (2).jpg" alt="Cloned Apps">
+                        <div class="project-links">
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small" target="_blank">
+                                <i class='bx bx-link-external'></i> Live
+                            </a>
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small btn-outline" target="_blank">
+                                <i class='bx bxl-github'></i> Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Cloned Apps</h3>
+                        <p class="project-description">
+                            Recreated apps like Samsung Notes, Calendar, and Apple Calculator to improve Flutter skills
+                            and UI/UX design understanding.
+                        </p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>UI/UX</span>
+                            <span>Dart</span>
+                        </div>
                     </div>
                 </div>
-                <div class="project-content">
-                    <h3 class="project-title">Cloned Apps</h3>
-                    <p class="project-description">
-                        Recreated apps like Samsung Notes, Calendar, and Apple Calculator to improve Flutter skills and UI/UX design understanding.
-                    </p>
-                    <div class="project-tech">
-                        <span>Flutter</span>
-                        <span>UI/UX</span>
-                        <span>Dart</span>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Project 10: Counter Vehicle -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="assets/images/counter-vehicle.png" alt="Counter Vehicle App">
-                    <div class="project-links">
-                        <a href="#" class="btn btn-small" target="_blank">
-                            <i class='bx bx-link-external'></i> Live
-                        </a>
-                        <a href="#" class="btn btn-small btn-outline" target="_blank">
-                            <i class='bx bxl-github'></i> Code
-                        </a>
+                <!-- Project 10: Counter Vehicle -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/counter-vehicle.png" alt="Counter Vehicle App">
+                        <div class="project-links">
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small" target="_blank">
+                                <i class='bx bx-link-external'></i> Live
+                            </a>
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small btn-outline" target="_blank">
+                                <i class='bx bxl-github'></i> Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Counter Vehicle</h3>
+                        <p class="project-description">
+                            A vehicle counting app for Sana'a University's engineering faculty. Tracks vehicles and
+                            supports localization using Shared Preferences.
+                        </p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Shared Preferences</span>
+                        </div>
                     </div>
                 </div>
-                <div class="project-content">
-                    <h3 class="project-title">Counter Vehicle</h3>
-                    <p class="project-description">
-                        A vehicle counting app for Sana'a University's engineering faculty. Tracks vehicles and supports localization using Shared Preferences.
-                    </p>
-                    <div class="project-tech">
-                        <span>Flutter</span>
-                        <span>Shared Preferences</span>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Project 11: Smart Management -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="assets/images/smart-management.png" alt="Smart Management">
-                    <div class="project-links">
-                        <a href="#" class="btn btn-small" target="_blank">
-                            <i class='bx bx-link-external'></i> Live
-                        </a>
-                        <a href="#" class="btn btn-small btn-outline" target="_blank">
-                            <i class='bx bxl-github'></i> Code
-                        </a>
+                <!-- Project 11: Smart Management -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/smart-management.png" alt="Smart Management">
+                        <div class="project-links">
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small" target="_blank">
+                                <i class='bx bx-link-external'></i> Live
+                            </a>
+                            <a href="https://github.com/farea-aldhelaa" class="btn btn-small btn-outline" target="_blank">
+                                <i class='bx bxl-github'></i> Code
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Smart Management</h3>
-                    <p class="project-description">
-                        A local data management app using SQLite, developed for a Mobile App Development course at Sanaa University.
-                    </p>
-                    <div class="project-tech">
-                        <span>Flutter</span>
-                        <span>SQLite</span>
-                        <span>Offline Storage</span>
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Management</h3>
+                        <p class="project-description">
+                            A local data management app using SQLite, developed for a Mobile App Development course at
+                            Sanaa University.
+                        </p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>SQLite</span>
+                            <span>Offline Storage</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-            </div>
-            <div class="section-footer">
-                <a href="https://github.com/farea-aldhelaa" class="btn btn-outline" data-translate="skills.viewAll">
-                    <i class='bx bxl-github'></i> View All Projects
-                </a>
-            </div>
+        <div class="section-footer">
+            <a href="https://github.com/farea-aldhelaa" class="btn btn-outline" data-translate="skills.viewAll">
+                <i class='bx bxl-github'></i> View All Projects
+            </a>
+        </div>
         </div>
     </section>
 
@@ -775,7 +777,7 @@
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4 class="footer-title" data-translate="footer.links">Quick Links</h4>
-                        <ul class="dash-list">
+                        <ul id="links-list" class="dash-list">
                             <li><a href="#home" data-translate="nav.home">Home</a></li>
                             <li><a href="#about" data-translate="nav.about">About</a></li>
                             <li><a href="#skills" data-translate="nav.skills">Skills</a></li>
@@ -785,11 +787,14 @@
                     </div>
                     <div class="footer-column">
                         <h4 class="footer-title" data-translate="footer.services">Services</h4>
-                        <ul class="dash-list">
-                            <li><a href="#" data-translate="services.web">Web Development</a></li>
-                            <li><a href="#" data-translate="services.mobile">Mobile App Development</a></li>
-                            <li><a href="#" data-translate="services.database">Database Solutions</a></li>
-                            <li><a href="#" data-translate="services.consulting">Software Consulting</a></li>
+                        <ul id="services-list" class="dash-list">
+
+                            <li><a href="#" data-translate="nav.web">Full-Stack Dev</a></li>
+                            <li><a href="#" data-translate="nav.web">Web Development</a></li>
+                            <li><a href="#" data-translate="nav.mobile">Mobile Development</a></li>
+                            <li><a href="#" data-translate="nav.database">Database Solutions</a></li>
+                            <li><a href="#" data-translate="nav.consulting">Software Consulting</a></li>                            
+
                         </ul>
                     </div>
                 </div>
@@ -806,7 +811,7 @@
                     <a href="https://github.com/farea-aldhelaa" target="_blank" aria-label="GitHub">
                         <i class='bx bxl-github'></i>
                     </a>
-                    <a href="https://x.com/Flutter_Dev717?s=08" target="_blank" aria-label="Twitter">
+                    <a href="https://x.com/farea_aldhelaa" target="_blank" aria-label="Twitter">
                         <i class='bx bxl-twitter'></i>
                     </a>
                 </div>

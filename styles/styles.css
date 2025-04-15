@@ -418,10 +418,9 @@ ul {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
-    display: flex;    
+    min-height: 100vh;   
     align-items: center;
-    padding-top: 100px;
+    padding-top: 120px;
     position: relative;
     overflow: hidden;
 }
@@ -526,6 +525,9 @@ ul {
     position: relative;
     display: flex;
     justify-content: center;
+    order: 1;
+    margin: 0 auto;
+    max-width: 350px;
 }
 
 .image-wrapper {
@@ -1230,11 +1232,7 @@ ul {
         margin-top: var(--space-lg);
     }
     
-    .hero-image {
-        order: 1;
-        margin: 0 auto;
-        max-width: 350px;
-    }
+ 
     
     .hero-title {
         font-size: 2.5rem;
@@ -1397,9 +1395,7 @@ ul {
         margin-bottom: var(--space-md);
     }
     
-    .hero-image {
-        max-width: 280px;
-    }
+   
     
     .btn {
         width: 100%;
@@ -1480,9 +1476,7 @@ ul {
         align-items: flex-start;
     }
     
-    .hero-image {
-        max-width: 250px;
-    }
+  
 }
 
 /* iOS Viewport Fix */

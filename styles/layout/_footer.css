@@ -1,0 +1,114 @@
+/* Footer */
+.footer {
+    background: var(--bg-dark);
+    color: var(--text-color);
+    padding: var(--space-xl) 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+
+/* الشعار في الفوتر */
+.footer-brand .logo {
+    color: var(--bg-light); 
+    font-size: 1.5rem; /* تكبير الشعار */
+}
+
+/* نص الفوتر */
+.footer-text {
+    color: var(--text-light);
+    margin-top: var(--space-sm);
+    font-size: 0.9rem;
+}
+
+/* روابط الفوتر */
+.footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.footer-title {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: var(--space-sm);
+}
+
+/* القوائم في الفوتر */
+.footer-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.footer-column a {
+    color: var(--text-light);
+    transition: var(--transition);
+}
+
+.footer-column a:hover {
+    color: var(--primary-color);
+    padding-left: var(--space-xs);
+}
+
+/* تحسين تصميم footer-bottom */
+.footer-bottom {
+    padding: var(--space-md) 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;  /* للسماح بالتفاف العناصر في الشاشات الصغيرة */
+    gap: var(--space-md);  /* إضافة تباعد بين العناصر */
+}
+
+/* النص داخل الفوتر */
+.footer-bottom p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 0; /* إزالة المسافة السفلية في الشاشات الصغيرة */
+    text-align: center; /* محاذاة النص في الشاشات الصغيرة */
+}
+
+/* الأيقونات الاجتماعية */
+.footer-social {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center; /* مركز الأيقونات في الشاشات الصغيرة */
+    flex: 1 1 auto; /* نفس مبدأ التمدد */
+}
+
+.footer-social a {
+    color: var(--text-light);
+    font-size: 1.5rem; /* زيادة حجم الأيقونات */
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-social a:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* تحسين التفاعل مع الأيقونات */
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    transform: scale(1.1);
+}

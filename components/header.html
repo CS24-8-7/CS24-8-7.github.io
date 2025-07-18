@@ -1,0 +1,36 @@
+<nav class="navbar">
+    <div class="container">
+        <a href="#home" class="logo" id="logo-name">Farea<span>Dev</span></a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" class="active" data-translate="nav.home">Home</a></li>
+            <li><a href="#about" data-translate="nav.about">About</a></li>
+            <li><a href="#skills" data-translate="nav.skills">Skills</a></li>
+            <li><a href="#projects" data-translate="nav.projects">Projects</a></li>
+            <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <div class="language-dropdown">
+                <button id="lang-btn" class="icon-btn" onclick="toggleLangMenu()">
+                    <i class='bx bx-globe'></i>
+                </button>
+                <ul id="lang-menu" class="lang-menu">
+                    <li onclick="switchLanguage('en')">English</li>
+                    <li onclick="switchLanguage('ar')">العربية</li>
+                </ul>
+            </div>
+
+            <button id="theme-toggle" class="icon-btn">
+                <i class='bx bx-sun sun-icon'></i>
+                <i class='bx bx-moon moon-icon'></i>
+            </button>
+
+            <button class="mobile-menu-btn" id="menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+

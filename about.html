@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Farea AL-Dhela'a</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="header-logo" id="logo-name">Farea<span>Dev</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" data-translate="nav.home">Home</a></li>
+                <li><a href="about.html" class="active" data-translate="nav.about">About</a></li>
+                <li><a href="skills.html" data-translate="nav.skills">Skills</a></li>
+                <li><a href="projects.html" data-translate="nav.projects">Projects</a></li>
+                <li><a href="contact.html" data-translate="nav.contact">Contact</a></li>
+            </ul>
+             <div class="nav-actions">
+                      <div class="language-dropdown">
+                    <button id="lang-btn" class="icon-btn" onclick="toggleLangMenu()">
+                        <i class='bx bx-globe'></i>
+                    </button>
+                    <ul id="lang-menu" class="lang-menu">
+                        <li onclick="switchLanguage('en')">English</li>
+                        <li onclick="switchLanguage('ar')">العربية</li>
+                    </ul>
+                </div>
+
+                <button id="theme-toggle" class="icon-btn">
+                    <i class='bx bx-sun sun-icon'></i>
+                    <i class='bx bx-moon moon-icon'></i>
+                </button>
+
+                <button class="mobile-menu-btn" id="menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="about.title">About Me</h2>
+                <p class="section-subtitle" data-translate="about.subtitle">Get to know me better</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="assets/images/about-image.jpg" alt="Farea AL-Dhela'a" class="about-img">
+                </div>
+                <div class="about-content">
+                    <h3 class="about-title" data-translate="about.who">Who I Am</h3>
+                    <p class="about-text" data-translate="about.description">
+                        I'm a Computer Science graduate with a passion for creating innovative and effective
+                        applications.
+                        I've studied a wide range of programming languages and gained hands-on experience through
+                        university
+                        projects and internships.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class=\'bx bx-envelope\'></i>
+                            <div>
+                                <span data-translate="about.email">Email</span>
+                                <a href="mailto:faraa717281413@gmail.com">faraa717281413@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class=\'bx bx-phone\'></i>
+                            <div>
+                                <span data-translate="about.phone">Phone</span>
+                                <a href="https://wa.me/967717281413">+967 717 281 413</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class=\'bx bx-map\'></i>
+                            <div>
+                                <span data-translate="about.location">Location</span>
+                                <p>Sana'a, Yemen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/translations.js"></script>
+</body>
+</html>
+
